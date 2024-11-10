@@ -45,3 +45,5 @@ print(msdata.head())
 print(f"Mean walking speed by education level:\n{msdata.groupby("education_level")["walking_speed"].mean()}")
 print(f"\nMean costs by insurance type:\n{msdata.groupby("insurance_type")["costs"].mean()}")
 print(f"\nAge effect on walking speed: {msdata["age"].corr(msdata['walking_speed']):.2f}")
+
+msdata.to_csv('ms_data_Q2.csv', index=False)
