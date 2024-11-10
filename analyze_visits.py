@@ -46,4 +46,10 @@ print(f"Mean walking speed by education level:\n{msdata.groupby("education_level
 print(f"\nMean costs by insurance type:\n{msdata.groupby("insurance_type")["costs"].mean()}")
 print(f"\nAge effect on walking speed: {msdata["age"].corr(msdata['walking_speed']):.2f}")
 
+# with open("readme.md", "a") as file:
+#     file.write("# Summary of Q2<br>")
+#     file.write(f"\nMean walking speed by education level:\n{msdata.groupby("education_level")["walking_speed"].mean()}<br>")
+#     file.write(f"\nMean costs by insurance type:\n{msdata.groupby("insurance_type")["costs"].mean()}<br>")
+#     file.write(f"\nAge effect on walking speed: {msdata["age"].corr(msdata['walking_speed']):.2f}")
+
 msdata.to_csv('ms_data_Q2.csv', index=False)

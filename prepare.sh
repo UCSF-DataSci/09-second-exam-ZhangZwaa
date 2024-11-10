@@ -9,4 +9,10 @@ rm ms_data_temp.csv ms_data_temp2.csv ms_data_temp3.csv ms_data_temp4.csv
 
 echo -e 'insurance_type\nBasic\nPremium\nPlatinum\nNoInsurance' > insurance.lst
 
-echo -e "Total number of visits: $(expr $(wc -l < ms_data.csv) - 1)"
+echo -e "# Summary of Q1" > readme.md
+echo -e "Total number of visits: $(expr $(wc -l < ms_data.csv) - 1)<br>" >> readme.md
+echo -e "First few rows of file:<br>" >> readme.md
+head -10 ms_data.csv | while IFS= read -r line; do
+  echo -e "$line<br>" >> readme.md
+done
+
