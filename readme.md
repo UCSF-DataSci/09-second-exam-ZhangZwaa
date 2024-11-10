@@ -27,7 +27,7 @@ Premium         5246.521219<br>
 Age effect on walking speed: -0.69<br>
 # Summary of Q3
 ## Analyze walking speed
-Model: OLS
+Model: OLS<br>
 Regression Coefficients: [ 0.19970344  0.5923656  -0.59814054 -0.1939285  -0.03021663]<br>
 R2: 0.808<br>
 RMSE for Baseline Model: 0.34<br>
