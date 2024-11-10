@@ -25,3 +25,20 @@ Platinum        2249.299552<br>
 Premium         5246.521219<br>
 <br>
 Age effect on walking speed: -0.69<br>
+# Summary of Q3
+## Analyze walking speed
+Model: OLS
+Regression Coefficients: [ 0.19970344  0.5923656  -0.59814054 -0.1939285  -0.03021663]<br>
+R2: 0.808<br>
+RMSE for Baseline Model: 0.34<br>
+F-statistic: 1673951.77<br>
+P-value: 0.0000<br>
+## Analyze costs
+Simple analysis of insurance type effect<br>
+![Simple analysis of insurance type effect](1.png)<br>
+Box plots and basic statistics<br>
+![Box plots and basic statistics](boxplot.png)<br>
+Effect sizes using eta-squared: 0.9969, which means insurance type has a **strong** effect on costs<br>
+## Advanced analysis
+![interaction result with confounder](9.png)<br>
+Analyze _education_ and _age_ interaction effects on _walking speed_. Control for relevant confounders _visit months_

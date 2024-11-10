@@ -33,7 +33,7 @@ regr.fit(X, y)
 # Output the regression coefficients
 print("Regression Coefficients:", regr.coef_)
 
-# If data has repeated measures (e.g., subject_id), we can fit a mixed-effects model
+# Account for repeated measures
 if "subject_id" in data.columns:
     mixed_model = MixedLM(y, X, groups=data["subject_id"])
     mixed_results = mixed_model.fit()
